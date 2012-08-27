@@ -319,12 +319,6 @@ Err_OLEUnbound424_Click:
 End Sub
 
 
-Private Sub Option223_KeyPress(KeyAscii As Integer)
-TextBox Text464 = "4"
-
-
-End Sub
-
 Private Sub Option223_MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)
 isbigisimukemmel.Visible = True
 urunguvenligimukemmel.Visible = False
@@ -891,13 +885,26 @@ takimkotu.Visible = False
 disiplinkotu.Visible = False
 End Sub
 
+Private Sub Option511_Click()  'option511 eklendi
+isbigisimukemmel.Visible = False
+urunguvenligimukemmel.Visible = False
+isguvenlilgimukemmel.Visible = True
+takimmukkemmel.Visible = False
+disiplinmukkemmel.Visible = False
+isbigisikotu.Visible = True
+urunguvenligikotu.Visible = False
+isguvenlilgikotu.Visible = True
+takimkotu.Visible = False
+disiplinkotu.Visible = False
+End Sub
+
 Private Sub Option513_MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)
 isbigisimukemmel.Visible = False
 urunguvenligimukemmel.Visible = False
 isguvenlilgimukemmel.Visible = False
 takimmukkemmel.Visible = False
 disiplinmukkemmel.Visible = False
-isbigisikotu.Visible = False
+isbigisikotu.Visible = True
 urunguvenligikotu.Visible = False
 isguvenlilgikotu.Visible = True
 takimkotu.Visible = False
