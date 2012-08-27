@@ -7,7 +7,7 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = True
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
-
+'yorum var
 Private Sub Ay_BeforeUpdate(Cancel As Integer)
 End Sub
 
@@ -319,6 +319,9 @@ Err_OLEUnbound424_Click:
 End Sub
 
 
+
+End Sub
+
 Private Sub Option223_MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)
 isbigisimukemmel.Visible = True
 urunguvenligimukemmel.Visible = False
@@ -330,6 +333,7 @@ urunguvenligikotu.Visible = False
 isguvenlilgikotu.Visible = False
 takimkotu.Visible = False
 disiplinkotu.Visible = False
+Text464.Text = 2
 End Sub
 
 Private Sub Option225_MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)
@@ -703,6 +707,7 @@ urunguvenligikotu.Visible = False
 isguvenlilgikotu.Visible = False
 takimkotu.Visible = False
 disiplinkotu.Visible = True
+Text476.Text = 0
 End Sub
 
 Private Sub Option367_MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)
@@ -716,6 +721,7 @@ urunguvenligikotu.Visible = False
 isguvenlilgikotu.Visible = False
 takimkotu.Visible = False
 disiplinkotu.Visible = False
+Text476.Text = 2
 End Sub
 
 Private Sub Option372_MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)
@@ -885,30 +891,21 @@ takimkotu.Visible = False
 disiplinkotu.Visible = False
 End Sub
 
-Private Sub Option511_Click()  'option511 eklendi
-isbigisimukemmel.Visible = False
-urunguvenligimukemmel.Visible = False
-isguvenlilgimukemmel.Visible = True
-takimmukkemmel.Visible = False
-disiplinmukkemmel.Visible = False
-isbigisikotu.Visible = True
-urunguvenligikotu.Visible = False
-isguvenlilgikotu.Visible = True
-takimkotu.Visible = False
-disiplinkotu.Visible = False
-End Sub
-
 Private Sub Option513_MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)
 isbigisimukemmel.Visible = False
 urunguvenligimukemmel.Visible = False
 isguvenlilgimukemmel.Visible = False
 takimmukkemmel.Visible = False
 disiplinmukkemmel.Visible = False
-isbigisikotu.Visible = True
+isbigisikotu.Visible = False
 urunguvenligikotu.Visible = False
 isguvenlilgikotu.Visible = True
 takimkotu.Visible = False
 disiplinkotu.Visible = False
+End Sub
+
+Private Sub Option515_MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)
+Text476.Text = "1"
 End Sub
 
 Private Sub sicilno_Exit(Cancel As Integer)
